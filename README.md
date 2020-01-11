@@ -3,7 +3,7 @@ PMT - Parallel Multithreaded encoder/decoder
 by 78372
 
 Main Options:
-PMT2.exe e/d {Encoder} {Basic Options} Input Output
+PMT.exe e/d {Encoder} {Basic Options} Input Output
 e/d represents encode/decode
 input/output can be specified as "-" for stdin/stdout
 {Encoder} must be present both for encoding and decoding
