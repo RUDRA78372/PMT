@@ -216,8 +216,7 @@ begin
         while True do
         begin
 
-          TParallel.&For(Low(InS), High(InS),
-            procedure(i: integer)
+          for i := Low(InS) to High(InS) do
             begin
               forcedirectories(Rndm + inttostr(i) + '\');
               if (Opt.STDIOE = NOSTD) or (Opt.STDIOE = STDOUT) then
@@ -230,7 +229,7 @@ begin
                 if InS[i].Position < InS[i].Size then
                   InS[i].Size := InS[i].Position;
               end;
-            end);
+            end;
           j := -1;
           for i := Low(InS) to High(InS) do
           begin
